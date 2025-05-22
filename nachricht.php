@@ -1,6 +1,6 @@
 <?php
 /*
-    Müllkalender der Stadt lesen (iCal-Format)
+    MÃ¼llkalender der Stadt lesen (iCal-Format)
     und Nachricht(en) generieren
     
 */
@@ -9,25 +9,25 @@
    # Globale Variablen                                            #
    ################################################################ */    
 
-// ** Zu ändernde Variablen **
+// ** Zu Ã¤ndernde Variablen **
 //
 // $_url    - Link zu Deiner ICAL Datei (Siehe Deine Stadtverwaltung)
 // $dpath   - Relative Verzeichnisadresse zu den Daten/Programmen
 // $bpath   - Relative Verzeichnisadresse zu den Bilddateien
 // $anztage - Anzahl Tage die ab heute angezeigt werden
-// $bilder  - Zuweisung eines Bildes zur Müllart
-//            (Die Namen der Müllarten findest Du in Deiner ICAL Datei
+// $bilder  - Zuweisung eines Bildes zur MÃ¼llart
+//            (Die Namen der MÃ¼llarten findest Du in Deiner ICAL Datei
 //             zwischen "BEGIN;VEVENT" und "END:VEVENT" unter "SUMMARY:" )
 //
 // Ab Zeile 146 muss eventuell die Anzahl der Zeilen "$moretx .= fgets($handle, 1024);"
-// erhöht oder erniedrigt werden. (Infotexte zu den Icons prüfen)
+// erhÃ¶ht oder erniedrigt werden. (Infotexte zu den Icons prÃ¼fen)
 //
-$_url = "https://kelkheim.de/mod_abfallkalender/index.php?action=ical&area=B-8%2C+S-8+Mi&datetype=Restm%FCll%2CBlaue+Tonne%2CBio-Tonne%2CGelber+Sack%2CSonderm%FCll%2CSperrm%FCll%2CGr%FCnabfuhr%2CRestm%FCll-Container%2CGr%FCnschnittannahmestelle%2CWertstoffhof%2CSonstige&street=Im+Kleinen+Grund&number=23";
+$_url = "https://kelkheim.de/mod_abfallkalender/index.php?action=ical&area=B-8%2C+S-8+Mi&datetype=Restm%FCll%2CBlaue+Tonne%2CBio-Tonne%2CGelber+Sack%2CSonderm%FCll%2CSperrm%FCll%2CGr%FCnabfuhr%2CRestm%FCll-Container%2CGr%FCnschnittannahmestelle%2CWertstoffhof%2CSonstige&street=xxx";
 $dpath = "";
 $bpath = "bilder/";
 $anztage = 30;
 $bilder["Bio-Tonne"] = $bpath.'bio.png';
-$bilder["Restmüll"] = $bpath.'rest.png';
+$bilder["RestmÃ¼ll"] = $bpath.'rest.png';
 $bilder["Blaue Tonne"] = $bpath.'papier.png';
 $bilder["Gruenschnittannahmestelle"] = $bpath.'gruenschnitt.png';
 $bilder['Muellsammelaktion "Sauberes Kelkheim"'] = $bpath.'muellsammel.png';
@@ -35,8 +35,8 @@ $bilder["Sondermuell"] = $bpath.'sonder.png';
 $bilder["Wertstoffhof"] = $bpath.'recycling.png';  
 $bilder["Restmuell-Container"] = $bpath.'container.png';  
 $bilder["Gelber Sack"] = $bpath.'gelbersack.png';  
-$bilder["Repair-Café"] = $bpath.'repair.png';
-// ** Änderungen Ende **
+$bilder["Repair-CafÃ©"] = $bpath.'repair.png';
+// ** Ã„nderungen Ende **
 
 $pgm_Call = 0;                          // 1=HTML, 2=Kommandozeile
 $handle = NULL;
@@ -56,7 +56,7 @@ $tagsek = 86400;
    ################################################################ */ 
 
 /* Funktion zum zerlegen einer Textzeile in die einzelnen Bestandteile
-   und Rückgabe der Teile in einem Array, Element 0 enthält die Anzahl der Einträge */
+   und RÃ¼ckgabe der Teile in einem Array, Element 0 enthÃ¤lt die Anzahl der EintrÃ¤ge */
 function teile_text($text)
 {
   $tok = "";
@@ -191,7 +191,7 @@ function bilder_finden($text, $inf)
     global $bilder;
     $text = trim($text);
     $text = iconv("UTF-8", "Windows-1252", $text);
-    $text = str_replace("ü", "ue", $text);
+    $text = str_replace("Ã¼", "ue", $text);
     $ergebnis = "&nbsp;"; 
     
     if (array_key_exists($text, $bilder))
@@ -204,7 +204,7 @@ function bilder_finden($text, $inf)
     {
         $text = str_replace("ue", "&uuml;", $text);
     }
-    $text = str_replace("é", "&eacute;", $text);    
+    $text = str_replace("Ã©", "&eacute;", $text);    
     echo ($text);
     return $ergebnis;
 }
