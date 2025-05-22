@@ -8,3 +8,7 @@ Jeder Abfuhrtermin ist zwischen den Zeilen "BEGIN:VEVENT" und "END:VEVENT beschr
 
 Alle Symbole haben die Größe 148 x 148 
 Quelle:Lizenzfreie Bilder aus der Google suche  (die Bilder wurden entsprechend verändert).
+
+Installation:
+Auf einem Raspberry Pi mit Apache Webserver, auf einem PC mit XAMPP oder Engine X.
+Die Verzeichnisstruktur so lassen Bilder ist ein Unterverzeichnis des Programmverzeichnisses.
