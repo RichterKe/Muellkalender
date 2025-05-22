@@ -1,4 +1,5 @@
 Ein PHP-Programm um die Daten für die Müllentsorgung aus einer iCal Datei zu lesen und auf einer Webseite darzustellen.
+Die Webseite ist für Mobilgeräte optimiert.
 
 Auf den Seiten der Stadtverwaltung kann man sich einen Müllkalender herunterladen. Meistens findet man dort auch den Name bzw. den Link
 für die iCal Datei.
