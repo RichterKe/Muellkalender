@@ -7,7 +7,7 @@ Die notwendigen Änderungen im Programm werden auf der Ersten Seite vorgenommen 
 Jeder Abfuhrtermin ist zwischen den Zeilen "BEGIN:VEVENT" und "END:VEVENT beschrieben. Der Name der Abfuhr ist unter "SUMMARY:" zu finden.
 
 Alle Symbole haben die Größe 148 x 148 
-Quelle:Lizenzfreie Bilder aus der Google suche  (die Bilder wurden entsprechend verändert).
+Quelle:Lizenzfreie Bilder aus der Google suche  (die Bilder wurden in der Größe verändert).
 
 Installation:
 Auf einem Raspberry Pi mit Apache Webserver, auf einem PC mit XAMPP oder Engine X.
