@@ -235,11 +235,11 @@ function anzeige_termine()
                               background: linear-gradient(to bottom, #F2F2F2, #F2F2F2 49%, #E2E2E2 51%, #E2E2E2 100%);}
           div iframe        { pointer-events:none; margin:0px; padding:0px; border:0px; width:60px; height:60px; }
   
-          <!-- CLASS -->
+          /* CLASS */
           .sensor           { pointer-events:none; margin:0px; padding:0px; border:0px; width:88px; height:83px; }
           .zeit             { margin:0px; padding:0px; border:0px; width:300px; height:25px; }
   
-          <!-- ID -->
+          /* ID */
           #rahmen           { border-top:1px solid #1683CE; }
           #titel            { font-size:24px; font-weight:bold; word-wrap:normal; white-space:normal; }
           #taba             { border:3px; }
