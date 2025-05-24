@@ -14,4 +14,6 @@ Installation:
 Auf einem Raspberry Pi mit Apache Webserver, auf einem PC mit XAMPP oder Engine X.
 Die Verzeichnisstruktur so lassen Bilder ist ein Unterverzeichnis des Programmverzeichnisses.
 
+Hinweise zu den einzelnen Versionen im Unterverzeichnis der Version.
+
 Bei Rückfragen erreicht ihr mich im Heimnetzforum    https://forum.heimnetz.de   unter dem Benutzernamen Loxley.
