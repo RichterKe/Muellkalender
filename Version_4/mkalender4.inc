@@ -1,27 +1,23 @@
 <?php
 /*
-    Include Datei für den Müllkalender Version 4
+    Include Datei fÃ¼r den MÃ¼llkalender Version 4
     
     $icsdat   - Link zu Deiner ICAL Datei (Siehe Deine Stadtverwaltung)
     $dpath    - Relative Verzeichnisadresse zu den Daten/Programmen
     $bpath    - Relative Verzeichnisadresse zu den Bilddateien
     $anztage  - Anzahl Tage die ab heute angezeigt werden
-    $ar_wtage - Wochentage je nach Wunsch abgekürzt oder ausgeschrieben
-    $bilder   - Zuweisung eines Bildes zur Müllart
-                (Die Namen der Müllarten findest Du in Deiner ICAL Datei
+    $ar_wtage - Wochentage je nach Wunsch abgekÃ¼rzt oder ausgeschrieben
+    $bilder   - Zuweisung eines Bildes zur MÃ¼llart
+                (Die Namen der MÃ¼llarten findest Du in Deiner ICAL Datei
                  zwischen "BEGIN;VEVENT" und "END:VEVENT" unter "SUMMARY:" )  
                    
-    Müllkalender der Stadt Stuttgart. Passe Deine Adresse wie folgt an:
+    MÃ¼llkalender der Stadt xxx. Passe Deine Adresse wie folgt an:
     
-    Öffne im Browser die Seite  "https://service.stuttgart.de/lhs-services/aws/jahreskalender"
-    und gib Deine Adresse ein anschließend wählst Du die Abfallart(en).
-    Drücke die Schaltfläche "iCal-Link erstellen".
-    Kopiere den Link und füge die Linkadresse bei $icsdat = ""; 
-    zwischen den beiden Anführungszeichen ein. 
+    xxxxx xxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxx
+    xxxx
     
 */
 
-//$icsdat = "https://service.stuttgart.de/lhs-services/aws/api/ical?street=Franziskaweg&streetnr=1";
 $icsdat = "";
 
 
@@ -40,25 +36,20 @@ $bilder["Sondermuell"] = $bpath.'sonder.png';
 $bilder["Wertstoffhof"] = $bpath.'recycling.png';  
 $bilder["Restmuell-Container"] = $bpath.'container.png';  
 $bilder["Gelber Sack"] = $bpath.'gelbersack.png';  
-$bilder["Repair-Café"] = $bpath.'repair.png';
+$bilder["Repair-CafÃ©"] = $bpath.'repair.png';
 $bilder["Sperrmuell"] = $bpath.'sperr.png';
-// Kölner Müllarten
-$bilder["Biomuell"] = $bpath.'bio.png';
-$bilder["Restmuell"] = $bpath.'rest.png';
-$bilder["Altpapier"] = $bpath.'papier.png';
-$bilder["Gelber Sack"] = $bpath.'gelbersack.png';
 
 // Korrekturen bei der Abfallart
-// Im Müllkalender der Stadt steht für die Müllart beispielsweise: 
+// Im MÃ¼llkalender der Stadt steht fÃ¼r die MÃ¼llart beispielsweise: 
 // "Bio-Tonne Bezirk B-3, S-3 Di"
 // Das wird in "Bio-Tonne" korrigiert 
 function aart_korr($text)
 {
     $ergebnis = "";
-    $temp = str_replace('01-wÃ¶chentl.', '', $text); 
-    $temp = str_replace('02-wÃ¶chentl.', '', $temp);
-    $temp = str_replace('03-wÃ¶chentl.', '', $temp);  
-    $temp = str_replace('04-wÃ¶chentl.', '', $temp);          
+    $temp = str_replace('01-wÃƒÂ¶chentl.', '', $text); 
+    $temp = str_replace('02-wÃƒÂ¶chentl.', '', $temp);
+    $temp = str_replace('03-wÃƒÂ¶chentl.', '', $temp);  
+    $temp = str_replace('04-wÃƒÂ¶chentl.', '', $temp);          
     if (strpos($temp,",") !== false)
     {
         $ergebnis = explode(',', $temp);
@@ -74,10 +65,10 @@ function aart_korr($text)
     return $ergebnis;
 }
 
-// Die Informationen für die Abfallart lesen
-// Die Beschreibung steht ab "DESCRIPTION:" bis zum nächsten Tag
-// Bei Fehler die iCal Datei prüfen und die Begiffe anpassen
-// Achtung: Die Tags müssen hinter "DESCRIPTION" vorkommen, sonst klappt es nicht!
+// Die Informationen fÃ¼r die Abfallart lesen
+// Die Beschreibung steht ab "DESCRIPTION:" bis zum nÃ¤chsten Tag
+// Bei Fehler die iCal Datei prÃ¼fen und die Begiffe anpassen
+// Achtung: Die Tags mÃ¼ssen hinter "DESCRIPTION" vorkommen, sonst klappt es nicht!
 function minfo_lesen($text)
 {
     preg_match_all('/DESCRIPTION:(.*)TRANSP:|ACTION:|END:/s', $text, $info_array);
@@ -93,15 +84,15 @@ function minfo_lesen($text)
 
     
 // Bilder finden und anzeigen
-// Änderungen optional    
+// Ã„nderungen optional    
 function bilder_finden($text, $inf)
 {
     global $dpath, $bpath;
     global $bilder;
     $text = trim($text);
-    $text = str_replace("GruÌˆner", "Gruener", $text);
+    $text = str_replace("GruÃŒË†ner", "Gruener", $text);
     $text = iconv("UTF-8", "Windows-1252", $text);
-    $text = str_replace("ü", "ue", $text);
+    $text = str_replace("Ã¼", "ue", $text);
     $ergebnis = "&nbsp;"; 
     
     if (array_key_exists($text, $bilder))
@@ -114,7 +105,7 @@ function bilder_finden($text, $inf)
     {
         $text = str_replace("ue", "&uuml;", $text);
     }
-    $text = str_replace("é", "&eacute;", $text);    
+    $text = str_replace("Ã©", "&eacute;", $text);    
     echo ($text);
     return $ergebnis;
 }
