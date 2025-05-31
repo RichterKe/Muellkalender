@@ -1,0 +1,46 @@
+Städte
+------
+Berlin 			x
+Hamburg			x
+München 		x
+Köln 			x
+Frankfurt am Main	x
+Kelkheim 		x
+Stuttgart 		x
+Düsseldorf
+Leipzig
+Dortmund
+Essen
+Bremen
+Dresden
+Hannover
+Nürnberg
+Duisburg
+Wuppertal
+Bielefeld
+Bonn
+Münster
+Mannheim
+Karlsruhe
+Augsburg
+Wiesbaden
+Gelsenkirchen
+Aachen
+Braunschweig
+Chemnitz
+Kiel
+Halle (Saale)
+Magdeburg
+Freiburg im Breisgau
+Krefeld
+Mainz
+Lübek
+Erfurt
+Oberhausen
+Rostock
+Kassel
+Hagen
+Potsdamm
+Saarbrücken
+
+
