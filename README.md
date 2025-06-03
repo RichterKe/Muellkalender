@@ -13,4 +13,5 @@ Die Verzeichnisstruktur so lassen Bilder ist ein Unterverzeichnis des Programmve
 
 Hinweise zu den einzelnen Versionen im Unterverzeichnis der Version.
 
-Bei Rückfragen erreicht ihr mich im Heimnetzforum    https://forum.heimnetz.de   unter dem Benutzernamen Loxley.
+Bei Rückfragen erreicht ihr mich im Heimnetzforum    https://forum.heimnetz.de/threads/php-muellkalender.6841/
+
