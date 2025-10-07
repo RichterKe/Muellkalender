@@ -12,8 +12,8 @@ Installation:
 Auf einem Raspberry Pi mit Apache Webserver, auf einem PC mit XAMPP oder Engine X.
 Die Verzeichnisstruktur so lassen Bilder ist ein Unterverzeichnis des Programmverzeichnisses.
 
-Änderungen zu Version 3:
-Das Progreamm wurde überarbeitet. Alle notwendigen ├änderungen werden jetzt in der Include Datei mkalender4.inc vorgenommen.
+Änderungen zu Version 3:  
+Das Progreamm wurde überarbeitet. Alle notwendigen Änderungen werden jetzt in der Include Datei mkalender4.inc vorgenommen.
 Im Unterverzeichnis includes befinden sich vorgefertigte Include Dateien. Diese müssen nur auf die Datei mkalender4.inc kopiert werden.
 
 Die Include Dateien werden schrittweise erweitert. Wenn Du einen Wunsch hast für eine Adresse dann kannst Du Dich gerne bei mir melden.  
