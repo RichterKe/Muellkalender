@@ -1,4 +1,4 @@
-<h3>Müllkalender Version 5 (Docker Verson)</h3>   
+<h3>Müllkalender Version 5 (Docker Version)</h3>   
 Ein PHP-Programm um die Daten für die Müllentsorgung aus einer iCal Datei zu lesen und auf einer Webseite darzustellen.  
 Die Version 5 kann über einen Docker Container gestartet werden. Der Start über die PHP Dateien ist immer noch möglich.  
 Die Datei mkalender4.php wurde in index.php umbenannt.  
