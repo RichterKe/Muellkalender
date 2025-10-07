@@ -27,7 +27,7 @@ Du ein ical = 'daten/muellabfuhr.ics'
 <b>Bilder zuordnen:</b>  
 Unter "[bilder]" kannst Du den verschiedenen Müllarten ein Symbol zuordnen.  
 Alle Symbole haben die Größe 148 x 148 Pixel.  
-Quelle:Lizenzfreie Bilder aus der Google suche (die Bilder wurden in Größe und Farbe verändert).  
+Quelle: Lizenzfreie Bilder aus der Google suche (die Bilder wurden in Größe und Farbe verändert).  
 Du kannst selbst erzeugte Bilddateien (Größe beachten) in das Verzeichnis "abfuhrdaten" laden, oder vorhandene Ändern.  
   
 <b>Verzeichnis "abfuhrdaten":</b>  
