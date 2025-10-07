@@ -110,7 +110,7 @@ Wenn Du aus diesem Verzeichnis eine (voreingestelle) Datei entfernst wird diese 
 </table>  
 
 Bei Rückfragen erreicht ihr mich im Heimnetzforum  
-https://forum.heimnetz.de/  
+https://forum.heimnetz.de/threads/docker-muellkalender.7383/ (Dockerversion)    
 oder  
 https://forum.heimnetz.de/threads/php-muellkalender.6841/  (Version 1-4)  
   
