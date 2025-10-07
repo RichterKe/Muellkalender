@@ -109,7 +109,8 @@ Wenn Du aus diesem Verzeichnis eine (voreingestelle) Datei entfernst wird diese 
   </tr> 
 </table>  
 
-Bei Rückfragen erreicht ihr mich im Heimnetzforum https://forum.heimnetz.de/  
+Bei Rückfragen erreicht ihr mich im Heimnetzforum  
+https://forum.heimnetz.de/  
 oder  
 https://forum.heimnetz.de/threads/php-muellkalender.6841/  (Version 1-4)  
   
