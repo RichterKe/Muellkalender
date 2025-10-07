@@ -1,22 +1,38 @@
-<h3>Müllkalender Version 4</h3>
-Ein PHP-Programm um die Daten für die Müllentsorgung aus einer iCal Datei zu lesen und auf einer Webseite darzustellen.
-Die Webseite ist für Mobilgeräte optimiert.
+<h3>Müllkalender Version 5</h3>   
+Ein PHP-Programm um die Daten für die Müllentsorgung aus einer iCal Datei zu lesen und auf einer Webseite darzustellen.  
+Die Version 5 kann über einen Docker Container gestartet werden. Der Start über die PHP Dateien ist immer noch möglich.  
+Die Datei mkalender4.php wurde in index.php umbenannt.  
 
-Auf den Seiten der Stadtverwaltung kann man sich einen Müllkalender herunterladen. Meistens findet man dort auch den Name bzw. den Link
-für die iCal Datei.
+<b>Programm starten:</b>  
+Die Datei "docker-compose.yaml" in ein Verzeichnis auf dem Docker Host kopieren.  
+Starten des Containers mit "docker compose up -d".  
+  
+<b>Programm beenden:</b>  
+Beenden des Containers mit "docker compose down".  
 
-Alle Symbole haben die Größe 148 x 148 
-Quelle:Lizenzfreie Bilder aus der Google suche  (die Bilder wurden in der Größe verändert).
+<b>Programm einrichten:</b>  
+Das Programm legt auf dem Host ein Verzeichnis mit dem Namen "abfuhrdaten" an.  
+In diesem Verzeichnis werden die Einstellungen abgelegt und sind beim nächsten Start wieder verfügbar.  
+Die Einstellungen erreichst Du in dem Du auf der HTML-Seite auf die Schrift "Müll Entsorgungstermine" klickst.  
+Nachdem alle Einstellungen gemacht sind müssen diese mit der Schaltfläche "absenden" gespeichert werden.  
+  
+<b>iCal Datei finden:</b>  
+Auf den Seiten der Stadtverwaltung kann man sich einen Müllkalender herunterladen.  
+Meistens findet man dort auch den Namen bzw. den Link für die iCal Datei.  
+Dieser Link muss unter "[programm]" in den Einstellungen hinter "ical" eingegeben werden.  
+Wenn Du eine heruntergeladene iCal Datei hast z.B mit dem Namen "muellabfuhr.ics" dann kannst Du  
+die in das Verzeichnis "abfuhrdaten" auf dem Docker Host kopieren. In der Konfiguration trägst  
+Du ein ical = 'daten/muellabfuhr.ics'  
+  
+<b>Bilder zuordnen:</b>  
+Unter "[bilder]" kannst Du den verschiedenen Müllarten ein Symbol zuordnen.  
+Alle Symbole haben die Größe 148 x 148 Pixel.  
+Quelle:Lizenzfreie Bilder aus der Google suche (die Bilder wurden in Größe und Farbe verändert).  
+Du kannst selbst erzeugte Bilddateien (Größe beachten) in das Verzeichnis "abfuhrdaten" laden, oder vorhandene Ändern.  
+  
+<b>Verzeichnis "abfuhrdaten":</b>  
+Wenn Du aus diesem Verzeichnis eine (voreingestelle) Datei entfernst wird diese beim Start wieder nachgeladen.  
 
-Installation:
-Auf einem Raspberry Pi mit Apache Webserver, auf einem PC mit XAMPP oder Engine X.
-Die Verzeichnisstruktur so lassen Bilder ist ein Unterverzeichnis des Programmverzeichnisses.
-
-Änderungen zu Version 3:  
-Das Progreamm wurde überarbeitet. Alle notwendigen Änderungen werden jetzt in der Include Datei mkalender4.inc vorgenommen.
-Im Unterverzeichnis includes befinden sich vorgefertigte Include Dateien. Diese müssen nur auf die Datei mkalender4.inc kopiert werden.
-
-Die Include Dateien werden schrittweise erweitert. Wenn Du einen Wunsch hast für eine Adresse dann kannst Du Dich gerne bei mir melden.  
  
 
 Bei Rückfragen erreicht ihr mich im Heimnetzforum    https://forum.heimnetz.de/threads/php-muellkalender.6841/
