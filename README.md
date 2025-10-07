@@ -1,4 +1,4 @@
-<h3>Müllkalender Version 5</h3>   
+<h3>Müllkalender Version 5 (Docker Verson)</h3>   
 Ein PHP-Programm um die Daten für die Müllentsorgung aus einer iCal Datei zu lesen und auf einer Webseite darzustellen.  
 Die Version 5 kann über einen Docker Container gestartet werden. Der Start über die PHP Dateien ist immer noch möglich.  
 Die Datei mkalender4.php wurde in index.php umbenannt.  
@@ -33,7 +33,7 @@ Du kannst selbst erzeugte Bilddateien (Größe beachten) in das Verzeichnis "abf
 <b>Verzeichnis "abfuhrdaten":</b>  
 Wenn Du aus diesem Verzeichnis eine (voreingestelle) Datei entfernst wird diese beim Start wieder nachgeladen.  
   
-<b>Inhalt von "<Dockerverzeichnis>/abfuhrdaten/"</b>  
+<b>Inhalt von "<Dockerverzeichnis>/abfuhrdaten/":</b>  
 <table border="0px">
   <tr>
     <td><b>Datei</b></td>  
@@ -109,5 +109,7 @@ Wenn Du aus diesem Verzeichnis eine (voreingestelle) Datei entfernst wird diese 
   </tr> 
 </table>  
 
-Bei Rückfragen erreicht ihr mich im Heimnetzforum    https://forum.heimnetz.de/threads/php-muellkalender.6841/
-
+Bei Rückfragen erreicht ihr mich im Heimnetzforum https://forum.heimnetz.de/
+oder
+https://forum.heimnetz.de/threads/php-muellkalender.6841/  (Version 1-4)  
+  
