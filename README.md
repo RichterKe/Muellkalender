@@ -1,4 +1,4 @@
-<h3>Müllkalender Version 3</h3>
+<h3>Müllkalender Version 4</h3>
 Ein PHP-Programm um die Daten für die Müllentsorgung aus einer iCal Datei zu lesen und auf einer Webseite darzustellen.
 Die Webseite ist für Mobilgeräte optimiert.
 
@@ -12,11 +12,11 @@ Installation:
 Auf einem Raspberry Pi mit Apache Webserver, auf einem PC mit XAMPP oder Engine X.
 Die Verzeichnisstruktur so lassen Bilder ist ein Unterverzeichnis des Programmverzeichnisses.
 
-Änderungen zu Version 2:
-Es wurde der Wochentag zum Datum hinzugefügt. Die Müllart "Sperrmüll" wurde hinzugefügt.
-Die notwendigenÄänderungen im Programm werden auf der Ersten Seite vorgenommen und sind kommentiert. 
-Die Namen der Müllarten sind in der iCal Datei zu finden. Jeder Abfuhrtermin ist zwischen den Zeilen "BEGIN:VEVENT" und "END:VEVENT beschrieben. 
-Der Name der Abfuhr ist unter "SUMMARY:" zu finden.
+Änderungen zu Version 3:
+Das Progreamm wurde überarbeitet. Alle notwendigen ├änderungen werden jetzt in der Include Datei mkalender4.inc vorgenommen.
+Im Unterverzeichnis includes befinden sich vorgefertigte Include Dateien. Diese müssen nur auf die Datei mkalender4.inc kopiert werden.
+
+Die Include Dateien werden schrittweise erweitert. Wenn Du einen Wunsch hast für eine Adresse dann kannst Du Dich gerne bei mir melden.  
  
 
 Bei Rückfragen erreicht ihr mich im Heimnetzforum    https://forum.heimnetz.de/threads/php-muellkalender.6841/
