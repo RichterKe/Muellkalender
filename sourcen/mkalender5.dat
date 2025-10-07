@@ -1,0 +1,46 @@
+// Datendatei für Müllkalender
+//
+// [programm]
+// ical - URL deiner ical Datei (schau auf der Webseite Deiner Stadtverwaltung nach
+//        oder beim Entsorgungsunternehmen)
+// tage - Anzahl der Tage (ohne heute) die angezeigt werden sollen
+//
+// [artkorr]
+// Korrekturen bei der Müllart um unerwünschte Texte zu ersetzen (Deine Adresse, Bezirk, etc.)
+//
+// [htmlkorr]
+// Zeichen werden so korrigiert dass sie in HTML richtig angezeigt werden (Akzente, Umlaute)
+//
+// [bilder]
+// Zuordnung der Bilder zu den Müllarten. Bitte 'Default' nicht verändern, dieses Bild
+// wird angezeigt wenn nichts gefunden wird.
+//
+// Die Texte müssen in  einzelne Hochkommas (') eingeschlosse sein. 
+// Dieses Zeichen darf nicht innerhalb eines Textes vorkommen. Doppeltes Hochkomma (") ist erlaubt.
+
+
+
+[programm]
+ical = 'https://kelkheim.de/mod_abfallkalender/index.php?action=ical&area=B-3%2C+S-3+Di&datetype=Restm%FCll%2CBlaue+Tonne%2CBio-Tonne%2CGelber+Sack%2CSonderm%FCll%2CSperrm%FCll%2CGr%FCnabfuhr%2CRestm%FCll-Container%2CGr%FCnschnittannahmestelle%2CWertstoffhof%2CSonstige&street=Gagernring&number=6'
+tage = 31
+
+[artkorr]
+'Bezirk B-3, S-3 Di' = ''
+'Gesonderte Laubabfuhr fuer Strassen-/Alleebaeume'  = 'Sonder-Laubabfuhr'
+
+[htmlkorr]
+'é' = '&eacute;'
+
+[bilder]
+'Default' = 'default.png'
+'Bio-Tonne' = 'bio.png'
+'Restmuell' = 'rest.png'
+'Blaue Tonne' = 'papier.png'
+'Gruenschnittannahmestelle' = 'gruenschnitt.png'
+'Muellsammelaktion "Sauberes Kelkheim"' = 'muellsammel.png'
+'Sondermuell' = 'sonder.png'   
+'Wertstoffhof' = 'recycling.png'  
+'Restmuell-Container' = 'container.png'  
+'Gelber Sack' = 'gelbersack.png'  
+'Repair-Café' = 'repair.png'
+'Sperrmuell' = 'sperr.png'
