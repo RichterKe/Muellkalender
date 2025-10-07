@@ -36,6 +36,10 @@ Wenn Du aus diesem Verzeichnis eine (voreingestelle) Datei entfernst wird diese 
 <b>Inhalt von "<Dockerverzeichnis>/abfuhrdaten/"</b>  
 <table border="0px">
   <tr>
+    <td><b>Datei</b></td>  
+    <td><b>Verwendung</b></td>
+  </tr>
+  <tr>
     <td>mkalender5.dat </td>  
     <td>Programmeinstellungen</td>
   </tr>
@@ -103,7 +107,7 @@ Wenn Du aus diesem Verzeichnis eine (voreingestelle) Datei entfernst wird diese 
     <td>tonne.png</td>  
     <td>Mülltonne (schwarz)</td>
   </tr> 
-  
+</table>  
 
 Bei Rückfragen erreicht ihr mich im Heimnetzforum    https://forum.heimnetz.de/threads/php-muellkalender.6841/
 
