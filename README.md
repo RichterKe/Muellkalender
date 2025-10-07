@@ -43,7 +43,67 @@ Wenn Du aus diesem Verzeichnis eine (voreingestelle) Datei entfernst wird diese 
     <td>bio.png</td>  
     <td>Mülltonne (braun)</td>
   </tr>  
- 
+  <tr>
+    <td>container.png</td>  
+    <td>Müllcontainer (schwarz)</td>
+  </tr>  
+   <tr>
+    <td>default.png</td>  
+    <td>Müllfahrzeug</td>
+  </tr>  
+    <tr>
+    <td>gelbersack.png</td>  
+    <td>Müllsack (gelb</td>
+  </tr>  
+    <tr>
+    <td>gruenerpunkt.png</td>  
+    <td>Symbol "Grüner Punkt"</td>
+  </tr>  
+    </tr>  
+    <tr>
+    <td>gruenschnitt.png</td>  
+    <td>Schubkarre mit Grünschnitt</td>
+  </tr> 
+    </tr>  
+    <tr>
+    <td>muellsammel.png</td>  
+    <td>Müllsammelaktion</td>
+  </tr> 
+    </tr>  
+    <tr>
+    <td>papier.png</td>  
+    <td>Mülltonne (blau)</td>
+  </tr> 
+    </tr>  
+    <tr>
+    <td>recycling.png</td>  
+    <td>Recyclingsymbol</td>
+  </tr> 
+  <tr>
+    <td>repair.png</td>  
+    <td>Repair Caffee</td>
+  </tr> 
+   <tr>
+    <td>rest.png</td>  
+    <td>Mülltonne (grau)</td>
+  </tr> 
+  <tr>
+    <td>restcont.png</td>  
+    <td>Müllcontainer (grau)</td>
+  </tr> 
+  <tr>
+    <td>sonder.png</td>  
+    <td>Sondermülltonne</td>
+  </tr> 
+  <tr>
+    <td>sperr.png</td>  
+    <td>Sperrmüll</td>
+  </tr> 
+  <tr>
+    <td>tonne.png</td>  
+    <td>Mülltonne (schwarz)</td>
+  </tr> 
+  
 
 Bei Rückfragen erreicht ihr mich im Heimnetzforum    https://forum.heimnetz.de/threads/php-muellkalender.6841/
 
