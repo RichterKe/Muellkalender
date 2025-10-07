@@ -1,0 +1,12 @@
+services:
+  muellkalender:
+    image: richterke/mkalender:v5.0
+    container_name: muellkalender
+    ports:
+      - 80:80
+    restart: unless-stopped
+    volumes:
+      - ./abfuhrdaten:/var/www/html/daten:rw
+
+
+
