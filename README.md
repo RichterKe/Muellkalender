@@ -32,7 +32,17 @@ Du kannst selbst erzeugte Bilddateien (Größe beachten) in das Verzeichnis "abf
   
 <b>Verzeichnis "abfuhrdaten":</b>  
 Wenn Du aus diesem Verzeichnis eine (voreingestelle) Datei entfernst wird diese beim Start wieder nachgeladen.  
-
+  
+<b>Inhalt von "<Dockerverzeichnis>/abfuhrdaten/"</b>  
+<table border="0px">
+  <tr>
+    <td>mkalender5.dat </td>  
+    <td>Programmeinstellungen</td>
+  </tr>
+  <tr>
+    <td>bio.png</td>  
+    <td>Mülltonne (braun)</td>
+  </tr>  
  
 
 Bei Rückfragen erreicht ihr mich im Heimnetzforum    https://forum.heimnetz.de/threads/php-muellkalender.6841/
